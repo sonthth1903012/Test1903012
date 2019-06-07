@@ -1,0 +1,17 @@
+h1.demo_css{
+    font-family:"Myriad Pro";
+    font-size: 38pt;
+    font-weight: bold; /* 100 300=>900 400 is normal 700 id bolb 8-9 is extra*/
+    text-align: justify;
+    text-transform: capitalize;
+    text-docoration: overline line-through underline;
+    text-indent: 20px;
+}
+p.demo_css2{
+    font-family:"Myriad Pro";
+    font-size: 18.58pt;
+#aaa{
+    clear: both;
+    background-color:#e6e6e6;
+    color:white;
+}
