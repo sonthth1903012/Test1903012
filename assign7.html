@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập đếm giờ</title>
+</head>
+<body>
+<button id="start" onclick="start()" type="button">Start</button>
+<script>
+    var timeout;
+    var second =0;
+    var minute=10;
+    function start() {
+        if(1){
+            timeout = setInterval(function () {
+                second--;
+                second == -1 ? (second = 59)&(minute--) : second = second;
+                if(minute==0&second==0){
+                    clearInterval(timeout);
+                }
+                else {
+                    console.log("0"+ minute + ":" + second);
+                }
+            },1000 );
+        }
+        else {
+            clearInterval(timeout);
+        }
+    }
+</script>
+</body>
+</html>
