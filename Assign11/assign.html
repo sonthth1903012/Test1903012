@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assign11.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Nunito+Sans:400,700|Work+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="assign11.js"></script>
+</head>
+<body>
+<div class="currency">
+    <div>
+        <div class="container">
+            <div id="the_empty">
+                <i class="fa fa-shopping-cart" id="cart"></i>
+                <span id="empty">empty  <i class="fa fa-angle-down"></i></span>
+
+            </div>
+            <p id="w" style="padding-top:12px;">Currency : GBP   <i class="fa fa-angle-down" style="color:#c8c7c7"></i>                                          
+                                                                                   
+                                                                    
+                                                                 
+                Register       Sign In</p>
+
+        </div>
+    </div>
+</div>
+<div class="link">
+    <div class="container">
+        <div>
+            <span><span id="avenue">avenue </span><span id="fashion">fashion</span></span>
+            <span id="men">
+                <p>
+                <span style="color:black">men</span>
+                <span style="padding:0 40px 0 40px"> <span style="color:black">   women</span>   </span>
+                <span style="color:#58d4d4"> the brand </span>
+                <span style="padding:0 40px 0 40px">   <span style="color:black"> local stores</span>    </span>
+                <span style="color:black">    look book    </span>
+                </p>
+                <i class="fa fa-angle-down"></i>
+                <span style="padding:0 40px 0 65px">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+                <span style="padding:0 40px 0 340px">
+                    <i class="fa fa-angle-down"></i>
+                </span>
+                <span></span>
+            </span>
+        </div>
+    </div>
+</div>
+</header>
+<section class="phan3" style="background-image: url(demo1.png)">
+    <h3 id="brand" style="padding-top:150px"><span id="the">THE </span><span id="brand">BRAND</span></h3>
+    <br/>
+    <p id="p2">COMPANY SLOGAN GOES HERE</p>
+</section>
+<div class="assign11">
+    <div class="container">
+        <div class="view">
+            <div class="view2">
+                <br/>
+                <br/>
+                <p style="font-size: 19pt; color:#676263;">LONDON</p><br/>
+                <span>180-182 Regent Street, London, W1B 5BT</span><br/><br/>
+            <span>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit.
+            Vivamus at arcu sem. Vestibulum ornare eleifendit massa, nec tempor odio.
+            Fusce posuere nunc iaculis ligula viverra iaculis. Aliquam erat volutpat.</span>
+                <script>
+                    $(document).ready(function(){
+                        $("button").click(function(){
+                            $("#map").fadeToggle();
+                        });
+                    });
+                </script><br/><br/>
+                <button class="button">View Detail</button>
+        </div>
+        <div class="view2">
+            <br/>
+            <br/>
+            <p style="font-size: 19pt; color:#676263;">NEW YORK</p><br/>
+            <span>109 Columbus Circle, New York, NY 10023</span><br/><br/>
+            <span>Nunc non posuere nisl.
+            Etiam finibus vel dui nec lobortis.
+            Aliquam egestas, sem quis condimentum venenatis, erat leo fermentum dolor, non sollicitudin massa mi eu nibh.
+            Nullam vitae aliquam dui, non sodales nisl.</span>
+            <script>
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        $("#map").fadeToggle();
+                    });
+                });
+            </script><br/><br/>
+            <button class="button">View Detail</button>
+        </div>
+        <div class="view2">
+            <br/>
+            <br/>
+            <p style="font-size: 19pt; color:#676263;">PARIS</p><br/>
+            <span>2133 Rue Saint-Honoré, 75001 Paris</span><br/><br/>
+            <span>Ut interdum fermentum blandit.
+                Donec nec lacus egetit mi rhoncus eleifend.
+                Curabitur laoreet nisl eget rutruml auctor.
+                Vestibulum ante ipsum primis in faucibus orcip luctus et ultrices posuere cubilia curae cras ligula.</span>
+            <script>
+                $(document).ready(function(){
+                    $("button").click(function(){
+                        $("#map").fadeToggle();
+                    });
+                });
+            </script><br/><br/>
+            <button class="button">View Detail</button>
+        </div>
+        </div>
+    </div>
+    <div class="map">
+        <div class="map_map">
+            <div id="map"></div>
+            <script>
+                var map;
+                function initMap() {
+                    navigator.geolocation.getCurrentPosition(function(position)
+                    {
+                        var lat = 0, long = 0;
+                        lat = position.coords.latitude;
+                        long = position.coords.longitude;
+                    })
+                    map = new google.maps.Map(document.getElementById('map'), {
+                        center: {lat: -34.397, lng: 150.644},
+                        zoom: 16
+                    });
+                }
+            </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+                    async defer></script>
+        </div>
+        <div class="map_info">
+            <div class="contain_map">
+                <br/><br/>
+                <p style="font-size: 19pt; color:#676263;">LONDON</p><br/>
+                <span>180-182 Regent Street, London, W1B 5BT</span><br/><br/>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing esi elit.
+                Vivamus at arcu sem.
+                Vestibulum ornare eleifendit massa, nec tempor odio.
+                Fusce posuere nunc iaculis ligula viverra iaculis.
+                Aliquam erat volutpat.</p><br/><br/>
+            <p><span><i class="fa fa-map-pin"></i></span><span> 180-182 Regent Street, London, W1B 5BT</span></p><br/>
+            <p><span><i class="fa fa-phone"></i></span><span> 0123-456-789</span></p><br/>
+            <p><span><i class="fa fa-link"></i></span><span> www.yourwebsite.com</span></p><br/>
+            <p><span><i class="fa fa-envelope"></i></span><span > support@yourwebsite.com</span></p><br/>
+            <p><span><i class="fa fa-hourglass-start"></i><span> Monday-Friday: 9am to 6pm  Saturday: 10am to 6pm  Sunday: 10am to 2pm</span></p><br/><br/>
+            <span style="font-size:23pt">
+                <i class="fa fa-facebook">   </i>
+                <i class="fa fa-twitter-square">   </i>
+                <i class="fa fa-instagram">   </i>
+                <i class="fa fa-pinterest"></i>
+            </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="container">
+        <div style="padding-top:50px">
+            <div class="trongfooter" style="float:left">
+                <h1 id="header_2">Information</h1>
+                <br/>
+                <p id="w3"><span style="color:#58d4d4">The brand</span></p>
+                <p id="w3">Local stores</p>
+                <p id="w3">Customer service</p>
+                <p id="w3">Privacy & cookies</p>
+                <p id="w3">Site map</p>
+
+            </div>
+            <div class="trongfooter" style="float:left">
+                <h1 id="header_2">Why buy from us</h1>
+                <br/>
+                <p id="w3">Shipping & returns</p>
+                <p id="w3">Secure shopping</p>
+                <p id="w3">Testimonials</p>
+                <p id="w3"><span style="color:#58d4d4">Award winning</span></p>
+                <p id="w3"><span style="color:#58d4d4">Ethical trading</span></p>
+
+            </div>
+            <div class="trongfooter" style="float:left">
+                <h1 id="header_2">Your account</h1>
+                <br/>
+                <p id="w3">Sign in</p>
+                <p id="w3">Register</p>
+                <p id="w3">View cart</p>
+                <p id="w3">View your lookbook</p>
+                <p id="w3">Track an order</p>
+                <p id="w3">Update information</p>
+            </div>
+
+
+            <div class="trongfooter" style="float:left">
+                <h1 id="header_2">Lookbook</h1>
+                <br/>
+                <p id="w3">Latest posts</p>
+                <p id="w3">Men’s lookbook</p>
+                <p id="w3">Lookbooks RSS feed</p>
+                <p id="w3">View your lookbook</p>
+                <p id="w3">Delete your lookbook</p>
+            </div>
+            <div class="trongfooter" style="float:left">
+                <h1 id="header_2">contact details</h1>
+                <br/>
+                <p id="w3">Head Office: Avenue Fashion,
+                    180-182 Regent Street, London.</p>
+                <p id="w3">Telephone: 0123-456-789 </p>
+                <p id="w3">Email: support@yourwebsite.com</p>
+            </div>
+        </div>
+        <div class="container" style="padding-top:240px">
+            <div id="logo1">
+                <p style="padding-top:55px">
+                <p id="award" >award winner</p>
+                <p id="award2">fashion award 2016</p>
+                </p>
+            </div>
+            <div id="logo2">
+                <span style="padding-left:90px">
+                <i class="fa fa-facebook" id="icon"></i>
+                <i class="fa fa-twitter" id="icon"></i>
+                <i class="fa fa-instagram" id="icon"></i>
+                <i class="fa fa-pinterest" id="icon"></i>
+                </span>
+            </div>
+            </p>
+        </div>
+    </div>
+</div>
+<div class="phan6">
+    <div class="container">
+        <div style="padding-top:15px">
+            <p id="w" style="float:left">© 2016 Avenue Fashion™   </p>
+        </div>
+        <div style="padding-top:0px">
+            <p id="w" style="float:right">Design by RobbyDesigns.com                           Dev by Loremipsum.com</p>
+        </div>
+        </divclass>
+    </div>
+    <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button></span>
+
+</body>
+</html>
