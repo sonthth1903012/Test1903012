@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>London's weather</title>
+    <script type="text/javascript" src="assign10.js"></script>
+</head>
+<body>
+<div class="weather">
+    <p>City: </p>
+    <p>Temp: </p>
+    <p>Min: </p>
+    <p>Max: </p>
+    <p>Desc: </p>
+</div>
+<div class="content"></div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: "assign10.json",
+            method: "get",
+            success: function (no1) {
+                $(".weather p:nth-child(1)").append(no1.name);
+                $(".weather p:nth-child(2)").append(no1.main.temp);
+                $(".weather p:nth-child(3)").append(no1.main.temp_min);
+                $(".weather p:nth-child(4)").append(no1.main.temp_max);
+                $(".weather p:nth-child(5)").append(no1.weather[0].description);
+            }
+        });
+    });
+</script>
+</body>
+</html>
