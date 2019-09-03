@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Gracious Garment</title>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/all.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,500,500i,600,600i&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/product-detail.css">
+
+</head>
+
+<body>
+<header>
+    <div class="container position-relative">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="navbar-brand d-none d-lg-block col-md-3">
+                    <a href="/homepage" class="iconlogo transition">
+                        <img src="../html/assets/images/logo.png" class="without-header logo responsive"/>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row">
+                    <div id="navbar-menu" class="navbar col-md-9 justify-content-end">
+                        <a class="nav-item nav-link" href="">
+                            <span><i class="fas fa-info-circle"></i> Information </span>
+                        </a>
+                        <a class="nav-item nav-link" href="">
+                            <span><i class="fas fa-shopping-basket"></i> Empty</span>
+                        </a>
+                    </div>
+                    <div class="navbar-nav ml-auto user-navbar col-md-3">
+                        <div class="input-group justify-content-end md-form form-sm form-2 pl-0">
+                            <div class="navbar-nav">
+                                <div class="currency d-block pt-2">
+                                    <select class="form-control rounded-0" id="sel1">
+                                        <option>USD</option>
+                                        <option>EUR</option>
+                                        <option>VND</option>
+                                    </select>
+                                </div>
+                                <div class="currency d-block">
+                                    <select class="form-control rounded-0" id="lang">
+                                        <option>EN</option>
+                                        <option>VN</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="department justify-content-start">
+                <div data-toggle="collapse" data-target="#collapseExample" aria-expanded="false"
+                     aria-controls="collapseExample">
+                    <h4>MEN DEPARTMENT <i class="fas fa-sort-down"></i></h4>
+                </div>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <div id="menu">
+                            <ul>
+                                <li>
+                                    <a href="">MEN <i class="fas fa-sort-down"></i></a>
+                                    <ul class="sub-menu list-unstyled">
+                                        <li><a class="menu-item pl-0" href="">News</a></li>
+                                        <li><a class="menu-item pl-0" href="">Sale</a></li>
+                                        <li><a class="menu-item pl-0" href="">Bestseller</a></li>
+                                        <li><a class="menu-item pl-0" href="">T-Shirts</a></li>
+                                        <li><a class="menu-item pl-0" href="">Long Sheeves</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">WOMEN <i class="fas fa-sort-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">News</a></li>
+                                        <li><a href="">Sale</a></li>
+                                        <li><a href="">Bestseller</a></li>
+                                        <li><a href="">T-Shirts</a></li>
+                                        <li><a href="">Long Sheeves</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">YOUTH <i class="fas fa-sort-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">News</a></li>
+                                        <li><a href="">Sale</a></li>
+                                        <li><a href="">Bestseller</a></li>
+                                        <li><a href="">T-Shirts</a></li>
+                                        <li><a href="">Long Sheeves</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="">OUT LET </a>
+                                </li>
+                                <li>
+                                    <a href="">50% SALE</a>
+                                </li>
+                                <li>
+                                    <a href="">BRANDS</a>
+                                </li>
+                                <li>
+                                    <a href="">TOP100</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <div class="navbar-nav ml-auto user-navbar">
+                    <div class="input-group md-form form-sm form-2 pl-0">
+                        <input class="form-control my-0 py-1 amber-border" type="text" placeholder="Product Search"
+                               aria-label="Search">
+                        <div class="input-group-append">
+                            <button class="input-group-text amber lighten-3">
+                                Search<i class="fas fa-search text-grey pl-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section>
+    <div class="first">
+        <div class="container" style="padding-top:40px;">
+            <div class="col-6 float-left" style="background-color:#ffffff;height:500px;">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/01pngclothes.jpg" class="d-block w-100" height="500px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/02pngclothes.jpg" class="d-block w-100" height="500px">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/03pngclothes.jpg" class="d-block w-100" height="500px">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-6 float-left" style="background-color:#ffffff; height:500px;">
+                <a style="font-size:26pt;font-weight: bold"> Men sweater special </a><br/>
+                <a style="font-size:11pt; color:#d7d7d7">by</a>
+                <a style="font-size:11pt; color:#d4c18e;"> Volcom</a>
+                <p style="font-size:42pt; font-weight:600;padding-top:15px">25$</p>
+                <p class="text" style="padding-top:6px;font-weight:bold">A special product designed by master Volcom and his special inspriration.
+                    Which is made of 100% cotton make you feel comfortable and free every moment. </p>
+                <div class="choose">
+                    <a>Rating</a>
+                </div>
+                <div class="choose">
+                    <a style="padding-right:210px">Choose colour</a>
+                    <button type="button" class="btn btn-primary"
+                            style="background-color:black;border-color:white;"></button>
+                    <button type="button" class="btn btn-secondary"
+                            style="background-color:dimgrey;border-color:white;"></button>
+                    <button type="button" class="btn btn-success"
+                            style="background-color:#379564;border-color:white;"></button>
+                </div>
+                <div class="choose">
+                    <a>Choose size</a>
+                </div>
+                <div class="choose">
+                    <a>Avaiability</a>
+                    <a style="color:#6ba941;padding-left:70px;font-size:11pt;">On stock - Sending within 24 hours</a>
+                </div>
+                <div class="choose">
+                    <a>Quantity</a>
+                    <input type="number" placeholder="1" style="width:40px ;height:25px;float:right;text-align:center"/>
+                </div>
+                <br/>
+                <div style="height:50px;width:220px;background-color:#c9af69;text-align:center;float:left;font-size:14pt;color:white;border-radius:3px; font-weight:600;padding-top:10px">
+                    <a target="_blank" href="http://www.google.com" style="color:#ffffff">ADD TO CART</a>
+                </div>
+                <div style="height:50px;width:190px;background-color:#3d3d3d;text-align:center;float:right;font-size:14pt;color:white;border-radius:3px; font-weight:600;padding-top:10px">
+                    <a target="_blank" href="http://www.google.com" style="color:#ffffff">ADD TO WISHLIST</a>
+                </div>
+            </div></div>
+        </div>
+    <div class="second">
+        <div class="container">
+            <div class="col-6 float-left" style="height:250px;padding-top:80px">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Detail info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Chart size</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Share</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus,
+                        urna sit amet dignissim egestas, tortor magna malesuada ipsum, et vestibulum nibh risus sit amet felis.
+
+                        Duis non blandit justo. Maecenas convallis, odio et tincidunt euismod,
+                        neque odio luctus risus, consequat varius lectus enim eget nibh. Donec eu ultrices ligula, eget pellentesque urna.
+                        Suspendisse molestie metus viverra, congue dolor at, fermentu.
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus,
+                        urna sit amet dignissim egestas, tortor magna malesuada ipsum, et vestibulum nibh risus sit amet felis.
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean luctus,
+                        urna sit amet dignissim egestas, tortor magna malesuada ipsum, et vestibulum nibh risus sit amet felis.
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 float-left" style="height:250px;padding-top:20px">
+                <div >
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="third">
+        <div class="container">
+            <div class="text2" style="padding-bottom:20px">RECOMMEND PRODUCTS <a class="text2" style="color:#e0e0e0">FOR YOU</a>
+                <div style="height:20px;width:650px;background-color:#d7d7d7;float:right"></div>
+            </div>
+            <div style="background-color:#ffffff; height:300px;" class="col-3 float-left">
+                <img src="assets/images/11pngclothes.jpg" style="height:240px;width:100%;">
+                <div style="height:60px;width:100%; background-color:#383838">
+                    <div class="col-9 float-left"
+                    style="font-weight:bold;color:#ffffff;font-size:8pt;">
+                        <a>Sweater ocean #2 </a>
+                        by<a style="color:#c9af69">J.Kindo</a>
+                    </div>
+                    <div class="col-3 float-left"
+                    style="font-weight:bold;color:#ffffff;font-size:17pt;padding:12px 12px 0 0">
+                        <a>32$</a>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#ffffff; height:300px;" class="col-3 float-left">
+                <img src="assets/images/12pngclothes.jpg" style="height:240px;width:100%;">
+                <div style="height:60px;width:100%; background-color:#383838">
+                    <div class="col-9 float-left"
+                         style="font-weight:bold;color:#ffffff;font-size:8pt;">
+                        <a>Sweater Disney #1 </a>
+                        by<a style="color:#c9af69">J.Kindo</a>
+                    </div>
+                    <div class="col-3 float-left"
+                         style="font-weight:bold;color:#ffffff;font-size:17pt;padding:12px 12px 0 0">
+                        <a>28$</a>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#ffffff; height:300px;" class="col-3 float-left">
+                <img src="assets/images/13pngclothes.jpg" style="height:240px;width:100%;">
+                <div style="height:60px;width:100%; background-color:#383838">
+                    <div class="col-9 float-left"
+                         style="font-weight:bold;color:#ffffff;font-size:8pt;">
+                        <a>Sweater Disney #2 </a>
+                        by<a style="color:#c9af69">J.Kindo</a>
+                    </div>
+                    <div class="col-3 float-left"
+                         style="font-weight:bold;color:#ffffff;font-size:17pt;padding:12px 12px 0 0">
+                        <a>28$</a>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#ffffff; height:300px;" class="col-3 float-left">
+                <img src="assets/images/14pngclothes.jpg" style="height:240px;width:100%;">
+                <div style="height:60px;width:100%; background-color:#383838">
+                    <div class="col-9 float-left"
+                         style="font-weight:bold;color:#ffffff;font-size:8pt;">
+                        <a>Sweater Disney #3 </a>
+                        by<a style="color:#c9af69">J.Kindo</a>
+                    </div>
+                    <div class="col-3 float-left"
+                         style="font-weight:bold;color:#ffffff;font-size:17pt;padding:12px 12px 0 0">
+                        <a>29$</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fifth">
+        <div class="container" style="padding-top:40px">
+            <div class="col-4 float-left" style="background-color:#ffffff; height:390px;">
+                <div class="text2">TOP SELLER
+                    <div style="float:right;background-color:#f3f3f3;height:20px;width:180px;"></div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/4pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men outfit style #15                         </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">James C </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">25$</p>
+                    </div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/clothes0006.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men outfit style #28                         </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">Karik </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">25$</p>
+                    </div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/6pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men outfit style #76                         </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">Chika </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">19$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 float-left " style="background-color:#ffffff; height:390px;">
+                <div class="text2"> ON SALE
+                    <div style="float:right;background-color:#f3f3f3;height:20px;width:180px;"></div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/10pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men outfit style #16                          </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">Natasha</a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">14.9$</p>
+                    </div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/8pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men outfit style #24                         </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">J Chan </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">14.9$</p>
+                    </div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/9pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men sweater ocean wave              </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">James C </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">14.9$</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 float-left" style="background-color:#ffffff; height:390px;">
+                <div class="text2">NEW STUFF
+                    <div style="float:right;background-color:#f3f3f3;height:20px;width:180px;"></div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/11pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men sweater ocean #2                     </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">J.Kindo </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">30$</p>
+                    </div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/15pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men sweater in grey                       </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">Emily </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">24$</p>
+                    </div>
+                </div>
+                <div class="grid" style="padding-top:10px">
+                    <div class="col-4 float-left">
+                        <img src="assets/images/16pngclothes.jpg" style="height:80px;width:60px">
+                    </div>
+                    <div style="line-height:14px">
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">Men sweater in black                     </a>
+                        <a style="color:#444444;font-size:10pt;letter-spacing:-1px">by <a style="color:#c9af69">T-Henry </a>                    </a>
+                        <p style="color:#444444;font-size:26pt;letter-spacing:-1px;padding-top:16px">24$</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="page-footer font-small">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left pt-4">
+
+        <!-- Grid row -->
+        <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mt-md-0">
+
+                <!-- Content -->
+                <h4 class="text-uppercase text-dark footer-nav-title">BRANDS</h4>
+                <div class="footer-nav-content text-bold pt-md-4">
+                    <ul class="list-unstyled">
+                        <li>Adidas, Adio, Birdhouse, C1rca,</li>
+                        <li>Calvin Klein, Cheap Monday, Dickies,</li>
+                        <li>Element, Emerica, Fallen, Herschel,</li>
+                        <li>HUF, Irie Daily, Lee, Levis, LRG,</li>
+                        <li>Mishka, Nike, Obey, Puma, Ray-ban,</li>
+                        <li>The Hundreds, Vans, Volcom</li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <hr class="clearfix w-100 d-md-none pb-3">
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h4 class="text-uppercase text-dark footer-nav-title">CUSTOMER SEVER</h4>
+                <div class="footer-nav-content text-bold pt-md-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Help</a>
+                        </li>
+                        <li>
+                            <a href="#!">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#!">Gift Cards</a>
+                        </li>
+                        <li>
+                            <a href="about">Order Status</a>
+                        </li>
+                        <li>
+                            <a href="">Free Shipping</a>
+                        </li>
+                        <li>
+                            <a href="">Returns & Exchanges</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+
+                <!-- Links -->
+                <h4 class="text-uppercase text-dark footer-nav-title">INFORMATION</h4>
+                <div class="footer-nav-content text-bold pt-md-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Shipping</a>
+                        </li>
+                        <li>
+                            <a href="#!">Returns</a>
+                        </li>
+                        <li>
+                            <a href="#!">Payments</a>
+                        </li>
+                        <li>
+                            <a href="#!">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Grid column -->
+            <!-- Grid column -->
+            <div class="col-md-3 mb-md-0 mb-3">
+                <h4 class="text-uppercase text-dark footer-nav-title">STAY CONNECTED</h4>
+                <div class="footer-nav-content text-bold pt-md-4">
+                    <ul class="list-unstyled list-inline text-left py-2">
+                        <li class="list-inline-item ">
+                            <a class="btn-floating btn-fb mx-1" href="#">
+                                <i class="fab fa-facebook-square fa-lg fa-2x"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-tw mx-1" href="#">
+                                <i class="fab fa-twitter-square fa-lg fa-2x"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-gplus mx-1" href="#">
+                                <i class="fab fa-pinterest-square fa-lg fa-2x"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="container-fluid footer-copyright py-3">
+        <div class="container align-items-center">
+            <div class="row">
+                <div class="texl-left col-6">
+                        <span class="text-uppercase text-bold">
+                            © 2019
+                            <a class="pl-1" href="#" style="font-size: 10px; color: #bababa">
+                                Design by Team Posivity
+                            </a>
+                        </span>
+
+                </div>
+                <div class="text-right col-6">
+                    <ul>
+                        <span><strong> WE ACCEPT</strong></span>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1" href="#">
+                                <i class="fab fa-cc-visa fa-lg"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1" href="#">
+                                <i class="fab fa-cc-mastercard fa-lg"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-floating btn-fb mx-1" href="#">
+                                <i class="fab fa-cc-paypal fa-lg"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</body>
+<!-- Javascript -->
+<script src="assets/js/jquery-3.4.1.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+
+</html>
