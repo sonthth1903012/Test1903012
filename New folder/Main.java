@@ -33,7 +33,7 @@ public class Main {
                             FileOutputStream fos = new FileOutputStream(f);
                             DataOutputStream dos = new DataOutputStream(fos);
                             for (Student st: studentList){
-                                String s= st.getId() +","+ st.getName() +","+ st.getAddress() +","+ st.getPhone();
+                                String s= st.getId() +","+ st.getName() +","+ st.getAddress() +","+ st.getPhone()+"\n";
                                 ftxt = ftxt + s;
                             }
                             dos.writeBytes(ftxt);
