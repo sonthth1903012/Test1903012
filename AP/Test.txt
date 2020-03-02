@@ -1,0 +1,16 @@
+  
+using System;
+
+namespace Practical
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Phone testPhone = new Phone("Phone no.1","cell phone",3252.3c);
+            MobilePhone testMobilePhone = new MobilePhone();
+            testPhone.display();
+            testMobilePhone.display();
+        }
+    }
+}

@@ -1,0 +1,17 @@
+  
+using System;
+namespace Practical
+{
+    public class MobilePhone: Phone
+    {
+        public MobilePhone()
+        {
+            phonetype = "Moblie";
+        }
+
+        public MobilePhone(string phonename, string phonetype, float phoneprice) : base(phonename, phonetype, phoneprice)
+        {
+            phonetype = "Moblie";
+        }
+    }
+}
